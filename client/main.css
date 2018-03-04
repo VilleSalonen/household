@@ -1,0 +1,46 @@
+.tasks {
+    list-style: none;
+}
+
+.navbar {
+    margin-bottom: 24px;
+}
+
+.tasks {
+    padding-left: 0;
+}
+
+.tasks li {
+    font-size: 18px;
+}
+
+.instructions {
+    font-size: 24px;
+}
+
+.bought {
+    margin-top: 24px;
+}
+
+.bought h1 {
+    font-size: 18px;
+}
+
+.bought ul {
+    display: inline;
+    list-style: none;
+    padding-left: 0;
+}
+
+.bought li {
+    font-size: 14px;
+    display: inline;
+}
+
+.bought li:after {
+    content: ", ";
+}
+
+.bought li:last-child:after {
+    content: "";
+}
