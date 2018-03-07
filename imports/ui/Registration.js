@@ -34,7 +34,7 @@ export default class Registration extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container login-and-registration">
         <h1>Kirjaudu sisään</h1>
 
         <form onSubmit={this.login.bind(this)} className="login">
