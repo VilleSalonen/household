@@ -36,20 +36,13 @@ export default class List extends Component {
         )}
 
         <form onSubmit={this.handleSubmit.bind(this)}>
-          <div className="form-row align-items-center">
-            <div className="col-auto">
+          <div className="form-group">
               <input
                 type="text"
-                className="form-control mb-2"
+                className="form-control"
                 ref="textInput"
-                placeholder="Mitä ostetaan?"
+                placeholder="Lisää tuote tähän"
               />
-            </div>
-            <div className="col-auto">
-              <button type="submit" className="btn btn-primary mb-2">
-                Lisää listalle
-              </button>
-            </div>
           </div>
         </form>
 
