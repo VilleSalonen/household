@@ -44,3 +44,7 @@
 .bought li:last-child:after {
     content: "";
 }
+
+.mark-as-bought {
+    text-align: right;
+}

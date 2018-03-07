@@ -12,7 +12,7 @@ export default class ListItem extends Component {
           <span className="text">{this.props.item.text}</span>
         </div>
 
-        <div className="col col-lg-2">
+        <div className="col col-lg-2 mark-as-bought">
           <button className="btn btn-success" onClick={this.markAsBought.bind(this)}>
             Ostettu
           </button>
