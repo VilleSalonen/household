@@ -28,7 +28,9 @@ export default class List extends Component {
     return (
       <div className="container">
         {this.props.tasks.length === 0 ? (
-          <p className="instructions">Ostoslista on tyhjä. Voit lisätä siihen tuotteita.</p>
+          <p className="instructions">
+            Ostoslista on tyhjä. Voit lisätä siihen tuotteita.
+          </p>
         ) : (
           <ul className="tasks">{this.renderTasks()}</ul>
         )}
@@ -51,11 +53,15 @@ export default class List extends Component {
           </div>
         </form>
 
-        <div className="bought">
-          <h1>Ostettu hiljattain</h1>
+        {this.props.bought.length > 0 ? (
+          <div className="bought">
+            <h1>Ostettu hiljattain</h1>
 
-          <ul>{this.renderBought()}</ul>
-        </div>
+            <ul>{this.renderBought()}</ul>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     );
   }
