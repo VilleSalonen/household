@@ -37,7 +37,7 @@ export default class Registration extends Component {
       <div className="container">
         <h1>Kirjaudu sisään</h1>
 
-        <form onSubmit={this.login.bind(this)}>
+        <form onSubmit={this.login.bind(this)} className="login">
           <div className="form-group">
             <input
               type="text"
