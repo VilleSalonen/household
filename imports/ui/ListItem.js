@@ -7,12 +7,12 @@ export default class ListItem extends Component {
 
   render() {
     return (
-      <li className="row">
-        <div className="col">
+      <li className="row shopping-list-item">
+        <div className="col align-self-center">
           <span className="text">{this.props.item.text}</span>
         </div>
 
-        <div className="col col-lg-2 mark-as-bought">
+        <div className="col col-lg-2 mark-as-bought align-self-center">
           <button className="btn btn-success" onClick={this.markAsBought.bind(this)}>
             Ostettu
           </button>
