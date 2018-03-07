@@ -50,7 +50,7 @@ export default withTracker(() => {
   return {
     tasks: ShoppingList.find(
       { bought: false },
-      { sort: { addedOn: -1 } }
+      { sort: { addedOn: 1 } }
     ).fetch(),
     bought: ShoppingList.find(
       { bought: true },
