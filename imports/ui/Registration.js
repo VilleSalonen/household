@@ -38,7 +38,7 @@ export default class Registration extends Component {
         <h1>Kirjaudu sisään</h1>
 
         <form onSubmit={this.login.bind(this)}>
-          <div class="form-group">
+          <div className="form-group">
             <input
               type="text"
               ref="username"
@@ -46,7 +46,7 @@ export default class Registration extends Component {
               placeholder="Käyttäjätunnus"
             />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <input
               type="password"
               ref="password"
@@ -54,7 +54,7 @@ export default class Registration extends Component {
               placeholder="Salasana"
             />
           </div>
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" className="btn btn-primary">
             Kirjaudu sisään
           </button>
         </form>
@@ -62,7 +62,7 @@ export default class Registration extends Component {
         <h1>Rekisteröinti</h1>
 
         <form onSubmit={this.register.bind(this)}>
-          <div class="form-group">
+          <div className="form-group">
             <input
               type="text"
               ref="newUsername"
@@ -70,7 +70,7 @@ export default class Registration extends Component {
               placeholder="Käyttäjätunnus"
             />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <input
               type="password"
               ref="newPassword"
@@ -78,7 +78,7 @@ export default class Registration extends Component {
               placeholder="Salasana"
             />
           </div>
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" className="btn btn-primary">
           Rekisteröidy
           </button>
         </form>
